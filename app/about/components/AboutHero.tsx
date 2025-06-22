@@ -1,6 +1,5 @@
 // components/about/AboutHero.tsx
 import Image from 'next/image';
-import Link from 'next/link';
 import heroImg from '@/public/about-image.jpg'; // Adjust the path to your image
 
 export default function AboutHero() {

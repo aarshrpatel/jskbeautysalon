@@ -2,13 +2,20 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
+import markerIconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIconUrl from 'leaflet/dist/images/marker-icon.png';
+import markerShadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
 // fix default icon paths (Leaflet’s webpack quirk)
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+const iconPrototype = L.Icon.Default.prototype as unknown as { _getIconUrl?: () => void };
+if (iconPrototype._getIconUrl) {
+  delete iconPrototype._getIconUrl;
+}
+
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+  iconRetinaUrl: markerIconRetinaUrl,
+  iconUrl: markerIconUrl,
+  shadowUrl: markerShadowUrl,
 });
 
 const locations: {

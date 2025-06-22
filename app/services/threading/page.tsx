@@ -1,4 +1,5 @@
 // app/services/threading/page.tsx
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
@@ -31,7 +32,7 @@ export default function ThreadingPage() {
           </ul>
         </div>
         <div>
-          <img
+          <Image
             src="/images/threading-demo.jpg"
             alt="Threading service demo"
             className="w-full rounded-lg shadow-lg"
