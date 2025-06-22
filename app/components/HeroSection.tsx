@@ -22,7 +22,7 @@ export default function HeroSection() {
         <p className="mt-4 text-white text-lg md:text-2xl max-w-xl">
           Smooth, precise, and comfortable beauty services tailored just for you.
         </p>
-        <Link href="/book">
+        <Link href="https://www.vagaro.com/jsk">
           <button className="mt-6 bg-[#E639A3] text-white px-6 py-3 rounded-full text-lg">
             Book Now
           </button>
