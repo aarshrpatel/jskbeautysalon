@@ -4,7 +4,7 @@ import BookAppointmentButton from '@/app/components/BookAppointmentButton';
 
 export const metadata = {
   title: 'Threading • JSK Threading & Body Wax',
-  description: 'Expert facial and body threading services in Summerville & Goose Creek',
+  description: 'Expert facial and body threading services in Nexton & Goose Creek',
 };
 
 export default function ThreadingPage() {

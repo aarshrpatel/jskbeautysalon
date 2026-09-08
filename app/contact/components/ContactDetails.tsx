@@ -6,7 +6,7 @@ export default function ContactDetails() {
     <div className="w-full lg:w-1/2 space-y-6">
       <h2 className="text-2xl font-bold">Contact Us</h2>
       <div>
-        <p className="font-semibold text-pink-500">Summerville :</p>
+        <p className="font-semibold text-pink-500">Nexton :</p>
         <p className="flex items-center mt-2">
           <FaPhoneAlt className="mr-2 text-pink-500" />+1 843-799-6204
         </p>

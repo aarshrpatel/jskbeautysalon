@@ -41,7 +41,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4">Opening Hours</h3>
           <div className="space-y-4">
             <div>
-              <p className="font-semibold text-pink-500">Summerville:</p>
+              <p className="font-semibold text-pink-500">Nexton:</p>
               <p>Mon - Sat: 10:00 am to 7:00 pm</p>
               <p>Sunday: Closed</p>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <div className="space-y-6">
             <div>
-              <p className="font-semibold text-pink-500">Summerville:</p>
+              <p className="font-semibold text-pink-500">Nexton:</p>
               <p className="flex items-center">
                 <FaPhoneAlt className="mr-2" />+1 843-799-6204
               </p>
