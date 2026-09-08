@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import consultImg from '@/public/consultation-image.jpg';
+import BookAppointmentButton from '@/app/components/BookAppointmentButton';
 
 export default function ConsultationSection() {
   return (
@@ -35,11 +35,12 @@ export default function ConsultationSection() {
             Our Vision:<br />
             Our commitment to quality and service ensures our clients are happy. With years of experience and continuing education, our dedicated staff is ready to serve your beauty needs.
           </p>
-          <Link href="https://www.vagaro.com/jsk">
-            <button className="mt-8 w-max bg-pink-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg transition">
-              Book An Appointment
-            </button>
-          </Link>
+          <div className="mt-8 w-max">
+            <BookAppointmentButton
+              label="Book An Appointment"
+              className="bg-pink-500 text-white font-semibold px-8 py-3 rounded-full shadow hover:shadow-lg transition"
+            />
+          </div>
         </div>
       </div>
     </section>

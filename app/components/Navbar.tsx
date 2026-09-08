@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@/public/logo.png'; // Adjust path if needed
+import BookAppointmentButton from '@/app/components/BookAppointmentButton';
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -100,14 +101,11 @@ export default function Navbar() {
           <div className="flex-1 flex items-center justify-end">
             {/* Desktop Button */}
             <div className="hidden lg:block">
-              <Link href="https://www.vagaro.com/jsk">
-                <button
-                  className="text-white font-semibold px-4 py-2 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition"
-                  style={{ backgroundColor: brandPink }}
-                >
-                  Book Appointment
-                </button>
-              </Link>
+              <BookAppointmentButton
+                align="right"
+                className="text-white font-semibold px-4 py-2 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition"
+                style={{ backgroundColor: brandPink }}
+              />
             </div>
 
             {/* Mobile menu button */}
@@ -185,14 +183,11 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
-          <Link href="https://www.vagaro.com/jsk">
-            <button
-              className="text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition"
-              style={{ backgroundColor: brandPink }}
-            >
-              Book Appointment
-            </button>
-          </Link>
+          <BookAppointmentButton
+            align="center"
+            className="text-white font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition"
+            style={{ backgroundColor: brandPink }}
+          />
         </div>
       )}
     </nav>

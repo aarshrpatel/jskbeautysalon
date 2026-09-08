@@ -1,6 +1,6 @@
 // app/services/threading/page.tsx
 import Image from 'next/image';
-import Link from 'next/link';
+import BookAppointmentButton from '@/app/components/BookAppointmentButton';
 
 export const metadata = {
   title: 'Threading • JSK Threading & Body Wax',
@@ -16,9 +16,13 @@ export default function ThreadingPage() {
         <p className="mt-4 text-gray-600">
           Precision brow, lip, chin & full-face threading by our certified stylists.
         </p>
-        <Link href="/book" className="inline-block mt-6 bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
-          Book Now
-        </Link>
+        <div className="mt-6">
+          <BookAppointmentButton
+            align="center"
+            label="Book Now"
+            className="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition"
+          />
+        </div>
       </section>
 
       {/* Details */}
