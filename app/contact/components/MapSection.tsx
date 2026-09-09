@@ -24,7 +24,7 @@ const locations: {
   address: string;
 }[] = [
   {
-    name: 'Summerville',
+    name: 'Nexton',
     position: [33.1023702, -80.1263005],
     address: '205 S Cross Creek Dr Unit C, Summerville, SC',
   },

@@ -1,1 +1,11 @@
 node_modules/
+.next/
+
+# Local secrets - never commit
+.env
+.env*.local
+
+# Generated
+tsconfig.tsbuildinfo
+
+.DS_Store
